@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tople_main"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="317dp"
+            android:layout_height="56dp"
+            android:background="@drawable/kakao_account_login_btn_large_wide"
+            android:gravity="bottom|center" />
+
+        <!-- 카카오 자체 제공 버튼. 세션이나 기타 실행을 알아서 처리 해 줍니다. 이를 visibility gone 설정을
+         하고 button_kakao에 연동시키는 방식으로 처리 했습니다.-->
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/btn_kakao_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+        </com.kakao.usermgmt.LoginButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tople_main"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="100dp"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="142dp"
+            android:layout_height="74dp"
+            android:indeterminateTint="#605CA8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tople_main"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+</LinearLayout>

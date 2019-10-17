@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_kakao_account_button_background"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/toplelogo_p" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/editText_insertCode"
+                    android:layout_width="283dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#5F5AB8"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="   초대받은 모임 코드를 입력하세요!"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/button_find"
+                    android:layout_width="232dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mainColor"
+                    android:text="모임 찾기"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/com_kakao_account_button_background"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView_moim"
+                android:layout_width="324dp"
+                android:layout_height="299dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView_count_legion"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView_moimname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightViolet"
+                android:editable="false"
+                android:enabled="false"
+                android:text="Button" />
+
+            <TextView
+                android:id="@+id/textView_moimProd"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:gravity="center|top"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/button_join"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:background="@color/mainColor"
+                android:text="가입하기"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/com_kakao_account_button_background" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="248dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_w"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/glass_b"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/buttonSet"
+            android:layout_width="231dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/setting_w"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+#Sat Sep 07 12:29:38 KST 2019
+base.0=E\:\\Android_ksh\\android\\workspace_team4\\Project_4T_ToPle\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

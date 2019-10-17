@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="project.moim.dto.MoimUser" alias="moimUser"/>
+		<typeAlias type="project.moim.dto.MoimMem" alias="moimMem"/>
+		<typeAlias type="project.moim.dto.Moim" alias="moim"/>
+		<typeAlias type="project.moim.dto.BoardList" alias="boardList"/>
+		<typeAlias type="project.moim.dto.Money" alias="money"/>
+		<typeAlias type="project.moim.dto.ReDat" alias="reDat"/>
+		<typeAlias type="project.moim.dto.Schedule" alias="schedule"/>
+		<typeAlias type="project.moim.dto.Schemem" alias="schemem"/>
+		<typeAlias type="project.moim.dto.ToDo" alias="toDo"/>
+		<typeAlias type="project.moim.dto.MoimTname" alias="moimTname"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="mybatis/moim-mapping.xml" />
+	</mappers>
+</configuration>

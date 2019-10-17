@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AdminActivity">
+
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mainColor"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="■ Authority Page"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/com_kakao_account_button_background" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="#00FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:bufferType="spannable"
+            android:gravity="center|center_vertical"
+            android:text="메세지 보내기"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/com_kakao_account_button_background" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120px"
+            android:layout_height="200px"
+            app:srcCompat="@drawable/right_arr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonModifyAllow"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:bufferType="spannable"
+            android:gravity="center|center_vertical"
+            android:text="권한수정 및 추방"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/com_kakao_account_button_background" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120px"
+            android:layout_height="200px"
+            app:srcCompat="@drawable/right_arr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMoimSett"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:bufferType="spannable"
+            android:gravity="center|center_vertical"
+            android:text="모임설정"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/com_kakao_account_button_background" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120px"
+            android:layout_height="200px"
+            app:srcCompat="@drawable/right_arr" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_marginBottom="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMoimDel"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:bufferType="spannable"
+            android:gravity="center|center_vertical"
+            android:text="모임삭제"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/com_kakao_account_button_background" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120px"
+            android:layout_height="200px"
+            app:srcCompat="@drawable/right_arr" />
+    </LinearLayout>
+
+</LinearLayout>
